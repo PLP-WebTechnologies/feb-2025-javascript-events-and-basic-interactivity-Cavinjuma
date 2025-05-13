@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Books lovers Playground</h1>
+  </header>
+
+  <!-- Button for Click and Double Click -->
+  <button id="colorBtn">Click Me!</button>
+
+  <!-- Hoverable Image -->
+  <div class="gallery">
+    <img id="mainImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2RnfzvePfB_GZ39W9cnQHVrEwcg8p5lYl6Q&s" alt="Gallery Image">
+    <div class="thumbnails">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7ekxu3OzvIQLn2K9bnYPHvNlHiVnR216eg&s" onclick="changeImage(this)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReiX6PGPY-SuBQBu9lYzd2k50ThSAgIjuULQ&s" onclick="changeImage(this)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDGSCH1vwb6XSl_EZedFmIz_9IWo6jMkbZA&s" onclick="changeImage(this)">
+    </div>
+  </div>
+
+  <!-- Accordion -->
+  <div class="accordion">
+    <div class="accordion-item">
+      <h3 class="accordion-header">Tab 1</h3>
+      <div class="accordion-content">This is the content for tab 1.</div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-header">Tab 2</h3>
+      <div class="accordion-content">This is the content for tab 2.</div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form id="contactForm" novalidate>
+    <h2>Contact Us</h2>
+    <label>
+      Email: <input type="email" id="email" placeholder="example@email.com" required>
+      <span class="feedback" id="emailFeedback"></span>
+    </label><br><br>
+
+    <label>
+      Password: <input type="password" id="password" placeholder="Password" required minlength="8">
+      <span class="feedback" id="passwordFeedback"></span>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
